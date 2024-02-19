@@ -1,0 +1,114 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 742px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1011px;
+  }
+}
+
+.key-section {
+  max-width: 767px;
+  margin: 0 auto;
+  background-color: #86baeb;
+  background-image: url(../images/fon-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/fon-mob@2x.jpg);
+  }
+}
+.key-title {
+}
+.key-mane {
+}
+.key-img {
+}
+.key-box {
+}
+.key-list {
+}
+.key-item {
+}
+.key-item-img {
+}
+.key-subtitle {
+}
+.key-item-text {
+}
+
+@media screen and (min-width: 768px) {
+  .key-section {
+    max-width: 1279px;
+    background-image: url(../images/fon-main-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .key-section {
+      background-image: url(../images/fon-main-tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .key-section {
+    max-width: 1440px;
+    background-image: url(../images/fon-main.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .key-section {
+      background-image: url(../images/fon-main@2x.jpg);
+    }
+  }
+}
