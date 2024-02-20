@@ -55,6 +55,7 @@ img {
   background-size: cover;
   padding-top: 72px;
   padding-bottom: 72px;
+  position: relative;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -65,22 +66,51 @@ img {
   }
 }
 .key-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 40px;
 }
+
 .key-mane {
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 40px;
 }
+
 .key-img {
+  margin-bottom: 44px;
 }
-.key-box {
-}
+
 .key-list {
+  display: flex;
+  flex-direction: column;
 }
+
 .key-item {
+  position: relative;
+  padding-left: 40px;
 }
+
+.key-item:not(:last-child) {
+  margin-bottom: 44px;
+}
+
 .key-item-img {
+  position: absolute;
+  top: -2px;
+  left: 0;
 }
+
 .key-subtitle {
+  font-weight: 700;
+  line-height: 1.43;
+  margin-bottom: 12px;
 }
+
 .key-item-text {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,6 +126,48 @@ img {
       background-image: url(../images/fon-main-tab@2x.jpg);
     }
   }
+
+  .key-title {
+    font-size: 24px;
+  }
+
+  .key-mane {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .key-img {
+    position: absolute;
+    left: 0;
+  }
+
+  .key-list {
+    align-items: flex-end;
+  }
+
+  .key-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .last-key-item {
+    position: absolute;
+    left: 32px;
+    bottom: 89px;
+  }
+
+  .key-item {
+    max-width: 290px;
+  }
+
+  .key-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+  }
+
+  .key-item-text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -110,5 +182,45 @@ img {
     .key-section {
       background-image: url(../images/fon-main@2x.jpg);
     }
+  }
+
+  .key-title {
+    margin-bottom: 80px;
+  }
+
+  .key-mane {
+    max-width: 855px;
+    margin: 0 auto;
+    margin-bottom: 117px;
+  }
+
+  .key-img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .key-list {
+    height: 513px;
+    flex-wrap: wrap;
+    row-gap: 453px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .key-item:not(:last-child) {
+    margin-bottom: 54px;
+  }
+
+  .key-item {
+    max-width: 261px;
+  }
+
+  .last-key-item {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .key-subtitle {
   }
 }
