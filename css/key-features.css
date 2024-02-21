@@ -116,6 +116,8 @@ img {
 @media screen and (min-width: 768px) {
   .key-section {
     max-width: 1279px;
+    padding-top: 100px;
+    padding-bottom: 47px;
     background-image: url(../images/fon-main-tab.jpg);
   }
 
@@ -149,10 +151,14 @@ img {
     margin-bottom: 50px;
   }
 
+  .key-item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
   .last-key-item {
     position: absolute;
     left: 32px;
-    bottom: 89px;
+    bottom: 63px;
   }
 
   .key-item {
@@ -173,6 +179,7 @@ img {
 @media screen and (min-width: 1280px) {
   .key-section {
     max-width: 1440px;
+    padding-bottom: 132px;
     background-image: url(../images/fon-main.jpg);
   }
 
@@ -197,22 +204,28 @@ img {
   .key-img {
     left: 50%;
     transform: translateX(-50%);
+    bottom: 44px;
   }
 
   .key-list {
-    height: 513px;
+    height: 494px;
     flex-wrap: wrap;
-    row-gap: 453px;
-    align-items: center;
-    justify-content: space-between;
+    column-gap: 453px;
+    align-items: start;
+    justify-content: start;
   }
 
   .key-item:not(:last-child) {
     margin-bottom: 54px;
   }
 
+  .key-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+
   .key-item {
     max-width: 261px;
+    padding-left: 38px;
   }
 
   .last-key-item {
